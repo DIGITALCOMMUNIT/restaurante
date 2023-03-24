@@ -1,0 +1,163 @@
+header img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+* {
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: rgb(219, 207, 207);
+	text-align: center;
+	padding: 20px;
+}
+
+.menu {
+	margin: 20px;
+}
+
+h2 {
+	margin-top: 50px;
+	font-size: 24px;
+    align-items: center;
+    
+}
+
+.menu-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.menu-item img {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+}
+
+.menu-item h3 {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.menu-item p {
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+
+
+
+}
+
+.RestaurantLogo{
+  width: 200px;
+  height: auto;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-30, -30);
+
+
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  background: linear-gradient(to bottom, #00c4ff, #0064ff);
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  animation: bubble 8s ease-in-out infinite alternate;
+  background: linear-gradient(to bottom, #f22f46, #fe617d);
+}
+
+.bubble:nth-child(1) {
+  transform: translate3d(-350%, -100%, 0);
+  animation-delay: 0.8s;
+}
+
+.bubble:nth-child(2) {
+  transform: translate3d(50%, -300%, 0);
+  animation-delay: 1.6s;
+}
+
+.bubble:nth-child(3) {
+  transform: translate3d(-100%, 150%, 0);
+  animation-delay: 2.4s;
+}
+
+.bubble:nth-child(4) {
+  transform: translate3d(300%, 100%, 0);
+  animation-delay: 3.2s;
+}
+
+.bubble:nth-child(5) {
+  transform: translate3d(150%, -200%, 0);
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(6) {
+  transform: translate3d(-200%, -50%, 0);
+  animation-delay: 4.8s;
+}
+
+.bubble:nth-child(7) {
+  transform: translate3d(100%, 250%, 0);
+  animation-delay: 5.6s;
+}
+
+.bubble:nth-child(8) {
+  transform: translate3d(-250%, 200%, 0);
+  animation-delay: 6.4s;
+}
+
+.bubble:nth-child(9) {
+  transform: translate3d(200%, -150%, 0);
+  animation-delay: 7.2s;
+}
+
+.bubble:nth-child(10) {
+  transform: translate3d(-150%, 300%, 0);
+  animation-delay: 8s;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale3d(1, 1, 1);
+    opacity: 0;
+  }
+  25% {
+    transform: translate3d(0, -200px, 0) rotateX(360deg) rotateY(360deg) rotateZ(360deg) scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  
+}
+
+
